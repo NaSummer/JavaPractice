@@ -40,7 +40,6 @@ public class start extends JFrame implements ActionListener {
 
 		while (count < 104700) {
 			try {
-				Thread.sleep(100);
 				count = count + 60;
 				br = new BufferedReader(new FileReader("bad apple/" + count
 						+ ".txt"));
@@ -53,9 +52,6 @@ public class start extends JFrame implements ActionListener {
 			} catch (IOException e) {
 				e.printStackTrace();
 				System.exit(-1);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
 			}
 		}
 	}
