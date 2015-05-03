@@ -41,6 +41,7 @@ public class FindPet {
 		// ask breed
 		if (isNoPet(checklist)) {
 			System.out.println("Sorry, here is no pet you want.");
+			return;
 		} else {
 			StringBuffer sb = new StringBuffer();
 			System.out.println("Which breed do you prefer?");
@@ -55,6 +56,7 @@ public class FindPet {
 		// ask gender
 		if (isNoPet(checklist)) {
 			System.out.println("Sorry, here is no pet you want.");
+			return;
 		} else {
 			StringBuffer sb = new StringBuffer();
 			System.out.println("Female or Male?");
@@ -77,6 +79,7 @@ public class FindPet {
 		// ask color
 		if (isNoPet(checklist)) {
 			System.out.println("Sorry, here is no pet you want.");
+			return;
 		} else {
 			StringBuffer sb = new StringBuffer();
 			System.out.println("Enter one color you like: ");
@@ -91,6 +94,7 @@ public class FindPet {
 		// ask character
 		if (isNoPet(checklist)) {
 			System.out.println("Sorry, here is no pet you want.");
+			return;
 		} else {
 			StringBuffer sb = new StringBuffer();
 			System.out.println("Enter one character you like: ");
@@ -105,6 +109,7 @@ public class FindPet {
 		// show the result
 		if (isNoPet(checklist)) {
 			System.out.println("Sorry, here is no pet you want.");
+			return;
 		} else {
 			System.out.print("Here is ");
 			int count = 0;
