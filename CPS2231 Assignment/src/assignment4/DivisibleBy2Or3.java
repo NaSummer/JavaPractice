@@ -16,10 +16,9 @@ class DivisibleBy2Or3 {
 		
 		// output loop
 		while (numOfNum>0) {
+			
 			// generate a BigInteger
-			BigInteger num = new BigInteger(50,random);
-			// change the BigInteger into a byte array
-			byte[] numInByteArr = num.toByteArray();
+			BigInteger num = new BigInteger(165,random);
 			
 			// make sure the BigInteger is with 50 digits
 			if (num.toString().length()==50) {
@@ -31,16 +30,16 @@ class DivisibleBy2Or3 {
 					continue;
 				}
 			
-			// divisible by 3
-			long sumOfByte = 0;
-			for (int j = 0; j < numInByteArr.length; j++) {
-				sumOfByte += numInByteArr[j];
+				// divisible by 3
+				BigInteger three = new BigInteger("3");
+				if (num.mod(three).intValue()==0) {
+					System.out.println(num);
+					numOfNum--;
+					continue;
+				}
+				
 			}
-			if (sumOfByte%3==0) {
-				System.out.println(num);
-				numOfNum--;
-				continue;
-			}
+			
 		}
 		
 	}
