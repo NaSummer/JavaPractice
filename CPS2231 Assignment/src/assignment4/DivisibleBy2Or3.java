@@ -21,12 +21,15 @@ class DivisibleBy2Or3 {
 			// change the BigInteger into a byte array
 			byte[] numInByteArr = num.toByteArray();
 			
-			// divisible by 2
-			if (numInByteArr[numInByteArr.length-1] % 2 == 0) {
-				System.out.println(num);
-				numOfNum--;
-				continue;
-			}
+			// make sure the BigInteger is with 50 digits
+			if (num.toString().length()==50) {
+				
+				// divisible by 2
+				if (num.intValue() % 2 == 0) {
+					System.out.println(num);
+					numOfNum--;
+					continue;
+				}
 			
 			// divisible by 3
 			long sumOfByte = 0;
