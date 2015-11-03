@@ -38,6 +38,12 @@ public class TestArrayAndLinkedList {
 	      System.out.print(linkedList.get(i) + " ");
 	    }
 	    
+	    LinkedList<String> linkedList2 = new LinkedList<String>();
+	    
+	    Collections.reverse(linkedList);
+//	    Collections.sort(linkedList);//因为List<Object>中的类型不同，而List<String>中类型相同
+	    Collections.sort(linkedList2);
+	    
 	}
 
 }
